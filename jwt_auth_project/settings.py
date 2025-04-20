@@ -133,7 +133,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'accounts.User'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES' : (
@@ -189,3 +189,6 @@ SWAGGER_SETTINGS = {
    'USE_SESSION_AUTH': False, # Swagger UI 인증 시 세션 대신 JWT 사용
    'DEFAULT_MODEL_RENDERING': 'example',
 }
+
+# drf-yasg 경고 해결
+SWAGGER_USE_COMPAT_RENDERERS = False
