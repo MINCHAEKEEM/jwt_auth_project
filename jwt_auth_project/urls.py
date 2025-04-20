@@ -39,7 +39,7 @@ schema_view = get_schema_view(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('users.urls')), # users 앱의 URL 포함 (prefix 없이 루트 경로 사용)
+    path('', include('accounts.urls')), # accounts 앱의 URL 포함 (prefix 없이 루트 경로 사용)
 
     # Swagger URL 패턴들
     # re_path 사용 이유: format 인자(.json, .yaml)를 선택적으로 받기 위함
